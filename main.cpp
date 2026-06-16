@@ -6,7 +6,8 @@
 
 // Nochmal was hinzugefügt
 
-int main() {
+int main()
+{
     OpenMeteoWeatherService weatherService;  // Create dependency (OpenMeteoWeatherService)
     WeatherAnalyzer weather(weatherService); // Inject dependency into WeatherAnalyzer
     WeatherPresenter presenter;
