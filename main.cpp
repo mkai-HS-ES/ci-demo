@@ -2,12 +2,7 @@
 #include "WeatherAnalyzer.hpp"
 #include "WeatherPresenter.hpp"
 
-// Hier steht jetzt ein super Text
-
-// Nochmal was hinzugefügt
-
-int main()
-{
+int main(){
     OpenMeteoWeatherService weatherService;  // Create dependency (OpenMeteoWeatherService)
     WeatherAnalyzer weather(weatherService); // Inject dependency into WeatherAnalyzer
     WeatherPresenter presenter;
