@@ -4,6 +4,8 @@
 
 // Hier steht jetzt ein super Text
 
+// Nochmal was hinzugefügt
+
 int main() {
     OpenMeteoWeatherService weatherService;  // Create dependency (OpenMeteoWeatherService)
     WeatherAnalyzer weather(weatherService); // Inject dependency into WeatherAnalyzer
