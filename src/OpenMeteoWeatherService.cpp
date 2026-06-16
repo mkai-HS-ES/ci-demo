@@ -7,7 +7,7 @@ using json = nlohmann::json;
 // coordinates
 WeatherData OpenMeteoWeatherService::getWeatherData(double latitude, double longitude) const {
     httplib::Client client("http://api.open-meteo.com");
-    std::string path = "/v1/forecast?latitude=" + std::to_string(latitude)
+    const std::string path = "/v1/forecast?latitude=" + std::to_string(latitude)
                        + "&longitude=" + std::to_string(longitude) + "&current_weather=true";
 
     auto res = client.Get(path.c_str());
